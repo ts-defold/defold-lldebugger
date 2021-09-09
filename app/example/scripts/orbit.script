@@ -1,0 +1,19 @@
+--[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
+local ____exports = {}
+local ____lldebugger_2Edebug = require("lldebugger.debug")
+local lldebugger = ____lldebugger_2Edebug.default
+lldebugger:start()
+go.property("speed", 1)
+function ____exports.init(self)
+    self.angle = 0
+    go.set("#sprite", "tint.w", 0.25)
+end
+function ____exports.update(self, dt)
+    self.angle = self.angle + (self.speed * dt)
+    go.set_rotation(
+        vmath.quat_rotation_z(self.angle)
+    )
+end
+init = ____exports.init
+update = ____exports.update
+

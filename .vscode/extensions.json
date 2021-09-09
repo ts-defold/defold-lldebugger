@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"typescript-to-lua.vscode-typescript-to-lua",
+		"dbaeumer.vscode-eslint",
+		"thejustinwalsh.textproto-grammer"
+	],
+}
