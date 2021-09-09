@@ -141,6 +141,4 @@ function ____exports.start(self)
         lldebugger:start()
     end
 end
-local ____debug = {start = ____exports.start}
-____exports.default = ____debug
 return ____exports

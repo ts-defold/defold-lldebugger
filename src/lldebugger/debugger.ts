@@ -39,6 +39,3 @@ export function start(): void {
     lldebugger.start();
   }
 }
-
-const debug = { start };
-export default debug;
