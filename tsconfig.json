@@ -21,7 +21,8 @@
     },
     "exclude": [
         "./node_modules/*",
-        "./plugins/*"
+        "./plugins/*",
+        "./app/*"
     ],
     "tstl": {
         "luaTarget": "5.1",
