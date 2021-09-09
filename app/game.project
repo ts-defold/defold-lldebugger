@@ -9,8 +9,8 @@ main_collection = /example/example.collectionc
 shared_state = 1
 
 [display]
-width = 1280
-height = 720
+width = 800
+height = 800
 high_dpi = 1
 update_frequency = 60
 

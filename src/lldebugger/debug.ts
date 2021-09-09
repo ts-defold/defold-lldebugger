@@ -28,6 +28,7 @@ if (DEBUG) {
   }
 }
 
+/**@noself */
 export function start(): void {
   if (DEBUG && os.getenv("LOCAL_LUA_DEBUGGER_VSCODE") == "1") {
     // https://github.com/TypeScriptToLua/TypeScriptToLua/issues/1118

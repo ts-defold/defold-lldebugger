@@ -1,4 +1,4 @@
-import * as lldebugger from "lldebugger.debugger";
+import * as lldebugger from "lldebugger.debug";
 lldebugger.start();
 
 interface props {
