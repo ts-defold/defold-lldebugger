@@ -134,7 +134,7 @@ if DEBUG then
         end
     end
 end
-function ____exports.start(self)
+function ____exports.start()
     if DEBUG and (os.getenv("LOCAL_LUA_DEBUGGER_VSCODE") == "1") then
         local dynamicRequire = require
         local lldebugger = dynamicRequire("lldebugger")
