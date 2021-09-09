@@ -8,7 +8,7 @@ Open your game.project file and in the dependencies field under project add:
 https://github.com/ts-defold/defold-lldebugger/archive/extension.zip
 ```
 
-Require the lldebugger module and start the debugger in your main script.
+Require the lldebugger module and start the debugger in your main script.  
 *Typically you would want to do this as earlier as possible in your game's startup*
 ```lua
 require("lldebugger.debug").start()
