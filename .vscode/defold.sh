@@ -19,6 +19,14 @@ windows_wrapoal_path=""
 cmd=$1
 target=$2
 
+function clean {
+    echo "# Clean"
+    echo ""
+    pushd "$DIR" > /dev/null
+    rm -rf dmengine*
+    popd > /dev/null
+}
+
 function launch {
     case $target in
         "macOS")
@@ -40,7 +48,7 @@ function launch {
     # When using native extensions we must use the custom engine
     custom_engine_path="../.internal/cache/engine-archives/$engine_platform/build.zip"
     # TODO
-    
+
     # Download dmengine if it doesn't exist
     if [ ! -f "$DIR/$engine_executable" ]; then
         sha1=$(curl -s http://d.defold.com/stable/info.json | sed -n 's/.*"sha1": "\(.*\)"\}/\1/p')
@@ -106,6 +114,9 @@ function launch {
 }
 
 case $cmd in
+    "clean")
+        clean
+        ;;
     "launch")
         launch
         ;;

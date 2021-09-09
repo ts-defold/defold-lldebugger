@@ -6,7 +6,7 @@
           "type": "lua-local",
           "request": "launch",
           "stopOnEntry": false,
-          "verbose": true,
+          "verbose": false,
           "internalConsoleOptions": "openOnSessionStart",
           "program": { "command": "bash" },
           "osx": { "args": [".vscode/defold.sh", "launch", "macOS"] },
