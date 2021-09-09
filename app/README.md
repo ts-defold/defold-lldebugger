@@ -17,8 +17,8 @@ lldebugger.start()
 
 ## VS Code Setup
 1. Install the [Local Lua Debugger](https://marketplace.visualstudio.com/items?itemName=tomblind.local-lua-debugger-vscode) extension
-2. Copy the `.vscode/launch.json` and `.vscode/defold.sh` files from the main branch of this repository into your defold project directory
-3. Edit the `.vscode/launch.json` per the instructions [here](https://github.com/tomblind/local-lua-debugger-vscode)
+2. Copy the `.vscode` folder into your defold project directory
+3. [Optional] Edit the `.vscode/launch.json` per the instructions [here](https://github.com/tomblind/local-lua-debugger-vscode)
 
 ## Launch
 Set your breakpoints then launch the Debug configuration.
