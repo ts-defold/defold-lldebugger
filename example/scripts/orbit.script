@@ -1,8 +1,7 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-local ____lldebugger_2Edebug = require("lldebugger.debug")
-local lldebugger = ____lldebugger_2Edebug.default
-lldebugger:start()
+local lldebugger = require("lldebugger.debugger")
+lldebugger.start()
 go.property("speed", 1)
 function ____exports.init(self)
     self.angle = 0
